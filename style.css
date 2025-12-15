@@ -1,10 +1,10 @@
 /* Custom CSS for Coworking Town */
 
 :root {
-    --lime-color: #c4f041;
-    --lime-light: #d8f673;
-    --lime-dark: #a8d628;
-    --success-green: #28a745;
+    --primary-color: #00B2A9;
+    --primary-light: #00d5cc;
+    --primary-dark: #008b82;
+    --success-green: var(--primary-color);
     /* Fonting variables */
     --body-font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     --heading-font: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
@@ -39,9 +39,9 @@ h5 { font-size: calc(var(--heading-font-size) * 0.6); }
 h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 
 
-/* Lime background class */
+/* Primary background class */
 .bg-lime {
-    background-color: var(--lime-color) !important;
+    background-color: var(--primary-color) !important;
 }
 
 /* Hero Section Styles */
@@ -58,7 +58,7 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
     right: -10%;
     width: 60%;
     height: 200%;
-    background: linear-gradient(45deg, var(--lime-light) 0%, transparent 70%);
+    background: linear-gradient(45deg, var(--primary-light) 0%, transparent 70%);
     opacity: 0.1;
     transform: rotate(45deg);
 }
@@ -112,18 +112,18 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 }
 
 .swiper-pagination-bullet {
-    background: var(--lime-color);
+    background: var(--primary-color);
     opacity: 0.7;
 }
 
 .swiper-pagination-bullet-active {
-    background: var(--lime-color);
+    background: var(--primary-color);
     opacity: 1;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: var(--lime-color);
+    color: var(--primary-color);
     background: rgba(255, 255, 255, 0.9);
     width: 50px;
     height: 50px;
@@ -134,7 +134,7 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    background: var(--lime-color);
+    background: var(--primary-color);
     color: #000;
     transform: scale(1.1);
 }
@@ -211,7 +211,7 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(196, 240, 65, 0.2);
-    border-color: var(--lime-color) !important;
+    border-color: var(--primary-color) !important;
 }
 
 /* Navigation */
@@ -219,11 +219,11 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
     font-weight: 800;
     font-size: 1.5rem;
     transition: all 0.3s ease;
-    color: var(--lime-color) !important;
+    color: var(--primary-color) !important;
 }
 
 .navbar-brand:hover {
-    color: var(--lime-dark) !important;
+    color: var(--primary-dark) !important;
     transform: scale(1.05);
 }
 
@@ -239,13 +239,13 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 }
 
 .nav-link:hover {
-    color: var(--lime-color) !important;
+    color: var(--primary-color) !important;
     background-color: rgba(196, 240, 65, 0.1);
     transform: translateY(-2px);
 }
 
 .nav-link.active {
-    color: var(--lime-color) !important;
+    color: var(--primary-color) !important;
     background-color: rgba(196, 240, 65, 0.15);
     font-weight: 700;
 }
@@ -257,7 +257,7 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
     left: 50%;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--lime-color), var(--lime-dark));
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
     transition: all 0.3s ease;
     transform: translateX(-50%);
     border-radius: 2px;
@@ -288,14 +288,14 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 }
 
 .navbar-toggler {
-    border: 2px solid var(--lime-color);
+    border: 2px solid var(--primary-color);
     border-radius: 8px;
     padding: 8px 12px;
     transition: all 0.3s ease;
 }
 
 .navbar-toggler:hover {
-    background-color: var(--lime-color);
+    background-color: var(--primary-color);
     transform: scale(1.05);
 }
 
@@ -346,15 +346,15 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 }
 
 .btn-success:hover {
-    background-color: var(--lime-dark);
-    border-color: var(--lime-dark);
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(196, 240, 65, 0.3);
 }
 
 .btn-outline-success:hover {
-    background-color: var(--lime-color);
-    border-color: var(--lime-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 /* Reviews Section */
@@ -417,7 +417,7 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
     background: rgba(255, 255, 255, 1);
     transform: translateX(5px);
     box-shadow: 0 5px 15px rgba(196, 240, 65, 0.2);
-    border-color: var(--lime-color);
+    border-color: var(--primary-color);
 }
 
 .contact-icon {
@@ -463,12 +463,12 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 }
 
 .social-links .btn:hover {
-    background-color: var(--lime-color) !important;
-    border-color: var(--lime-color) !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
     transform: translateY(-2px);
 }
 .form-control:focus {
-    border-color: var(--lime-color);
+    border-color: var(--primary-color);
     box-shadow: 0 0 0 0.2rem rgba(196, 240, 65, 0.25);
 }
 
@@ -504,13 +504,13 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 }
 
 .form-control:hover {
-    border-color: var(--lime-color);
+    border-color: var(--primary-color);
     background-color: #fff;
 }
 
 .form-control:focus {
     background-color: #fff;
-    border-color: var(--lime-color);
+    border-color: var(--primary-color);
     box-shadow: 0 0 0 0.2rem rgba(196, 240, 65, 0.25);
     outline: none;
 }
@@ -525,13 +525,13 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 }
 
 .form-select:hover {
-    border-color: var(--lime-color);
+    border-color: var(--primary-color);
     background-color: #fff;
 }
 
 .form-select:focus {
     background-color: #fff;
-    border-color: var(--lime-color);
+    border-color: var(--primary-color);
     box-shadow: 0 0 0 0.2rem rgba(196, 240, 65, 0.25);
     outline: none;
 }
@@ -545,14 +545,14 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
     text-transform: uppercase;
     letter-spacing: 1px;
     border: none;
-    background: linear-gradient(135deg, var(--lime-color) 0%, var(--lime-dark) 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     box-shadow: 0 4px 15px rgba(196, 240, 65, 0.3);
 }
 
 .btn-success:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(196, 240, 65, 0.4);
-    background: linear-gradient(135deg, var(--lime-dark) 0%, var(--lime-color) 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
 }
 
 .btn-success:active {
@@ -612,7 +612,7 @@ h6 { font-size: calc(var(--heading-font-size) * 0.5); }
 }
 
 .input-group-text {
-    background-color: var(--lime-color);
+    background-color: var(--primary-color);
     border: none;
     color: #000;
     font-weight: 600;
@@ -672,7 +672,7 @@ footer::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--lime-color) 0%, var(--lime-dark) 100%);
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-dark) 100%);
 }
 
 .footer-brand h4 {
@@ -697,8 +697,8 @@ footer::before {
 }
 
 .social-links .btn:hover {
-    background-color: var(--lime-color) !important;
-    border-color: var(--lime-color) !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
     color: #000 !important;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(196, 240, 65, 0.3);
@@ -722,7 +722,7 @@ footer::before {
     left: 0;
     width: 50px;
     height: 3px;
-    background: var(--lime-color);
+    background: var(--primary-color);
     border-radius: 2px;
 }
 
@@ -734,7 +734,7 @@ footer::before {
 }
 
 .footer-link:hover {
-    color: var(--lime-color) !important;
+    color: var(--primary-color) !important;
     transform: translateX(5px);
 }
 
@@ -803,7 +803,7 @@ footer .text-md-end {
 }
 
 .social-links a:hover {
-    color: var(--lime-color) !important;
+    color: var(--primary-color) !important;
     transform: translateY(-3px);
 }
 
@@ -879,13 +879,13 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--lime-color);
+    background: var(--primary-color);
     border-radius: 5px;
 }
 
 /* Custom Call Us Button */
 .call-us-btn {
-    background: linear-gradient(135deg, var(--lime-color) 0%, var(--lime-dark) 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     border: none;
     border-radius: 50px;
     font-weight: 600;
@@ -913,7 +913,7 @@ html {
 .call-us-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(196, 240, 65, 0.5);
-    background: linear-gradient(135deg, var(--lime-dark) 0%, var(--lime-color) 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
     color: #000;
 }
 
