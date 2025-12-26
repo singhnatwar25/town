@@ -276,3 +276,108 @@ document.addEventListener('templates:injected', function() {
 
 // Fonting tool removed: No related functions present.
 
+// Gallery Modal Functions
+function openImageModal(imageSrc, title, description) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    
+    if (modal && modalImage && modalTitle && modalDescription) {
+        modalImage.src = imageSrc;
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        
+        // Add animation
+        setTimeout(() => {
+            modal.classList.add('active');
+        }, 10);
+    }
+}
+
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    if (modal) {
+        modal.classList.remove('active');
+        setTimeout(() => {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }, 300);
+    }
+}
+
+function bookTour() {
+    closeImageModal();
+    // Scroll to contact section or open booking form
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+        const offsetTop = contactSection.offsetTop - 80;
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    }
+}
+
+function downloadImage() {
+    const modalImage = document.getElementById('modalImage');
+    if (modalImage) {
+        const link = document.createElement('a');
+        link.href = modalImage.src;
+        link.download = modalImage.src.split('/').pop() || 'workspace-image.jpg';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+}
+
+// Initialize gallery functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Gallery view buttons
+    const viewButtons = document.querySelectorAll('.view-btn');
+    viewButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const galleryItem = this.closest('.gallery-item');
+            const image = galleryItem.querySelector('.gallery-image');
+            const title = galleryItem.querySelector('h3, h4')?.textContent || 'Workspace Image';
+            const description = galleryItem.querySelector('p')?.textContent || 'Premium workspace at Coworking Town';
+            
+            if (image) {
+                openImageModal(image.src, title, description);
+            }
+        });
+    });
+    
+    // Close modal on background click
+    const modal = document.getElementById('imageModal');
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeImageModal();
+            }
+        });
+    }
+    
+    // Close modal on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeImageModal();
+        }
+    });
+    
+    // Tour buttons (if they exist)
+    const tourButtons = document.querySelectorAll('.tour-btn');
+    tourButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            bookTour();
+        });
+    });
+});
+
