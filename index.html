@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
@@ -245,74 +245,110 @@
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon bg-lime rounded-circle p-3 d-inline-block mb-3">
-                                <i class="bi bi-building fs-3 text-dark"></i>
+                    <div class="service-card-premium">
+                        <div class="service-image-wrapper">
+                            <img src="img/coworking.webp" class="service-card-image" alt="Coworking Space">
+                            <div class="service-overlay">
+                                <div class="service-badge">Premium</div>
                             </div>
-                            <h4 class="card-title">Coworking Space</h4>
-                            <p class="card-text text-muted">Open workspace environment perfect for freelancers and remote workers.</p>
-                            <img src="img/coworking.webp" class="img-fluid rounded mt-3 service-image" alt="Coworking Space">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Coworking Space</h3>
+                            <p class="service-description">Open workspace environment perfect for freelancers and remote workers.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">High-Speed WiFi</span>
+                                <span class="feature-tag">24/7 Access</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon bg-lime rounded-circle p-3 d-inline-block mb-3">
-                                <i class="bi bi-people-fill fs-3 text-dark"></i>
+                    <div class="service-card-premium">
+                        <div class="service-image-wrapper">
+                            <img src="img/meeting-room.png" class="service-card-image" alt="Meeting Room">
+                            <div class="service-overlay">
+                                <div class="service-badge">Professional</div>
                             </div>
-                            <h4 class="card-title">Meeting Room</h4>
-                            <p class="card-text text-muted">Professional meeting rooms for client presentations and team collaborations.</p>
-                            <img src="img/meeting-room2.jpg" class="img-fluid rounded mt-3 service-image" alt="Meeting Room">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Meeting Room</h3>
+                            <p class="service-description">Professional meeting rooms for client presentations and team collaborations.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Projector</span>
+                                <span class="feature-tag">Whiteboard</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon bg-lime rounded-circle p-3 d-inline-block mb-3">
-                                <i class="bi bi-house-door-fill fs-3 text-dark"></i>
+                    <div class="service-card-premium">
+                        <div class="service-image-wrapper">
+                            <img src="img/private-cabin.png" class="service-card-image" alt="Private Cabin">
+                            <div class="service-overlay">
+                                <div class="service-badge">Exclusive</div>
                             </div>
-                            <h4 class="card-title">Private Cabin</h4>
-                            <p class="card-text text-muted">Private, fully-equipped cabins for teams who need focused work environment.</p>
-                            <img src="img/private-cabin.jpg" class="img-fluid rounded mt-3 service-image" alt="Private Cabin">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Private Cabin</h3>
+                            <p class="service-description">Private, fully-equipped cabins for teams who need focused work environment.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Lockable</span>
+                                <span class="feature-tag">AC</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon bg-lime rounded-circle p-3 d-inline-block mb-3">
-                                <i class="bi bi-laptop fs-3 text-dark"></i>
+                    <div class="service-card-premium">
+                        <div class="service-image-wrapper">
+                            <img src="img/co-work.webp" class="service-card-image" alt="Dedicated Desk">
+                            <div class="service-overlay">
+                                <div class="service-badge">Personal</div>
                             </div>
-                            <h4 class="card-title">Dedicated Desk</h4>
-                            <p class="card-text text-muted">Your own dedicated workspace with all amenities included for consistent productivity.</p>
-                            <img src="img/dedicated-desk.jpg" class="img-fluid rounded mt-3 service-image" alt="Dedicated Desk">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Dedicated Desk</h3>
+                            <p class="service-description">Your own dedicated workspace with all amenities included for consistent productivity.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Storage</span>
+                                <span class="feature-tag">Power</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon bg-lime rounded-circle p-3 d-inline-block mb-3">
-                                <i class="bi bi-calendar-check fs-3 text-dark"></i>
+                    <div class="service-card-premium">
+                        <div class="service-image-wrapper">
+                            <img src="img/open-area.webp" class="service-card-image" alt="Day Pass">
+                            <div class="service-overlay">
+                                <div class="service-badge">Flexible</div>
                             </div>
-                            <h4 class="card-title">Day Pass</h4>
-                            <p class="card-text text-muted">Flexible day pass options for occasional workspace needs with full amenities access.</p>
-                            <img src="img/open-area.webp" class="img-fluid rounded mt-3 service-image" alt="Day Pass">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Day Pass</h3>
+                            <p class="service-description">Flexible day pass options for occasional workspace needs with full amenities access.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">No Commitment</span>
+                                <span class="feature-tag">All Access</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon bg-lime rounded-circle p-3 d-inline-block mb-3">
-                                <i class="bi bi-globe fs-3 text-dark"></i>
+                    <div class="service-card-premium">
+                        <div class="service-image-wrapper">
+                            <img src="img/front.webp" class="service-card-image" alt="Virtual Office">
+                            <div class="service-overlay">
+                                <div class="service-badge">Business</div>
                             </div>
-                            <h4 class="card-title">Virtual Office</h4>
-                            <p class="card-text text-muted">Professional business address and mail handling services for remote businesses.</p>
-                            <img src="img/front.webp" class="img-fluid rounded mt-3 service-image" alt="Virtual Office">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Virtual Office</h3>
+                            <p class="service-description">Professional business address and mail handling services for remote businesses.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Mail Handling</span>
+                                <span class="feature-tag">Prestigious Address</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -588,76 +624,94 @@
                 <h2 class="display-5 fw-bold">What Our Members Say</h2>
                 <p class="lead text-muted">Real experiences from our community</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <div class="mb-3">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                            </div>
-                            <p class="card-text fst-italic">"The people here are nice and have cool stuff to use."</p>
-                            <div class="d-flex align-items-center mt-3">
-                                <div class="bg-lime rounded-circle p-2 me-3 review-icon">
-                                    <i class="bi bi-person-fill text-dark"></i>
+            
+            <!-- Reviews Slider -->
+            <div class="reviews-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
                                 </div>
-                                <div>
-                                    <h6 class="mb-0">Freelancer</h6>
-                                    <small class="text-muted">Member since 2023</small>
+                                <p class="card-text fst-italic review-text" data-full-text="Had a great experience.! This coworking space is absolutely amazing! It's super comfortable, elegant, and has a very professional vibe. The interiors are modern, well-lit, and perfect for focused work or meetings. I really liked the peaceful environment and how well-maintained everything is. A great place to work productively and collaborate with others. Highly recommended!">
+                                    Had a great experience.! This coworking space is absolutely amazing! It's super comfortable, elegant, and has a very professional vibe. The interiors are modern, well-lit, and perfect for focused work or meetings. I really liked the peaceful environment and how well-maintained everything is. A great place to work productively and collaborate with others. Highly recommended!
+                                    <span class="read-more-btn">Read More</span>
+                                </p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <div class="bg-lime rounded-circle p-2 me-3 review-icon">
+                                        <i class="bi bi-person-fill text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Harsh Choudhary</h6>
+                                        <small class="text-muted">Member since 2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text fst-italic review-text" data-full-text="good experience, great way to work the peace needed for our workplace is here. I must say everyone who is working in corporate. Must visit this place. Thank you. Co- working town team for a beautiful place.">
+                                    good experience, great way to work the peace needed for our workplace is here. I must say everyone who is working in corporate. Must visit this place. Thank you. Co- working town team for a beautiful place.
+                                    <span class="read-more-btn">Read More</span>
+                                </p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <div class="bg-lime rounded-circle p-2 me-3 review-icon">
+                                        <i class="bi bi-person-fill text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Vansh Gurjar</h6>
+                                        <small class="text-muted">Member since 2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text fst-italic review-text" data-full-text="Great place to work — clean, professional, and inspiring atmosphere. Everything you need for a productive day! The ambiance is good as well">
+                                    Great place to work — clean, professional, and inspiring atmosphere. Everything you need for a productive day! The ambiance is good as well
+                                    <span class="read-more-btn">Read More</span>
+                                </p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <div class="bg-lime rounded-circle p-2 me-3 review-icon">
+                                        <i class="bi bi-person-fill text-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Garvit Sharma</h6>
+                                        <small class="text-muted">Member since 2025</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <div class="mb-3">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                            </div>
-                            <p class="card-text fst-italic">"They have the best environment and best ambience for freelancer and startups."</p>
-                            <div class="d-flex align-items-center mt-3">
-                                <div class="bg-lime rounded-circle p-2 me-3 review-icon">
-                                    <i class="bi bi-person-fill text-dark"></i>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0">Startup Founder</h6>
-                                    <small class="text-muted">Member since 2022</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <div class="mb-3">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                            </div>
-                            <p class="card-text fst-italic">"Very comfortable workplace with great ambiance and pleasant work culture."</p>
-                            <div class="d-flex align-items-center mt-3">
-                                <div class="bg-lime rounded-circle p-2 me-3 review-icon">
-                                    <i class="bi bi-person-fill text-dark"></i>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0">Remote Worker</h6>
-                                    <small class="text-muted">Member since 2023</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Slider Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Slider Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>

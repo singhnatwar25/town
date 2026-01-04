@@ -229,6 +229,65 @@ window.addEventListener('scroll', function() {
 
 // Initialize Swiper
 document.addEventListener('DOMContentLoaded', function() {
+    // Reviews Slider
+    if (document.querySelector('.reviews-slider')) {
+        const reviewsSwiper = new Swiper('.reviews-slider', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.reviews-slider .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.reviews-slider .swiper-button-next',
+                prevEl: '.reviews-slider .swiper-button-prev',
+            },
+            slidesPerView: 1,
+            spaceBetween: 30,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            },
+            effect: 'slide',
+        });
+    }
+
+    // Review Read More functionality
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('read-more-btn')) {
+            const reviewText = e.target.closest('.review-text');
+            if (reviewText) {
+                reviewText.classList.toggle('expanded');
+                if (reviewText.classList.contains('expanded')) {
+                    e.target.textContent = 'Read Less';
+                } else {
+                    e.target.textContent = 'Read More';
+                }
+            }
+        }
+    });
+
     const swiper = new Swiper('.gallerySwiper', {
         loop: true,
         autoplay: {
